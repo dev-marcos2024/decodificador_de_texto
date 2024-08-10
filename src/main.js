@@ -6,7 +6,7 @@ let btnCopiar = document.getElementById("copiar")
 
 //! Função para criptografar texto
 function criptografar(texto) {
-    let textoCriptografado = texto
+    let textoCriptografado = texto.toLowerCase()
         .replace(/e/g, "enter")
         .replace(/i/g, "imes")
         .replace(/a/g, "ai")
@@ -18,7 +18,7 @@ function criptografar(texto) {
 
 //! Função para desencriptografar texto
 function desencriptografar(textoCriptografado) {
-    let textoDesencriptografado = textoCriptografado
+    let textoDesencriptografado = textoCriptografado.toLowerCase()
         .replace(/enter/g, "e")
         .replace(/imes/g, "i")
         .replace(/ai/g, "a")
