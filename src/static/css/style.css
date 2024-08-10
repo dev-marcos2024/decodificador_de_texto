@@ -1,0 +1,134 @@
+:root{
+    --color-first: #d9def5;
+    --color-second: white;
+    --color-third: #072B61;
+    --color-fourth: #c9cef7;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-first);
+}
+.container-sm{
+    display: flex;
+    height: 100vh;
+    padding: 2em 0;
+    justify-content: space-between;
+    gap: 3em;
+}
+
+/*! Formatação do container a esquerda*/
+.con_laft-header{
+    align-self: flex-start;
+}
+
+.con_laft{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 2;
+    align-items: start;
+    gap: 2em;
+}
+.con_laft-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 2;
+    margin-bottom: 2em;
+    width: 100%;
+    padding-left: 10em;
+}
+#texto_digitado{
+    border: none; 
+    outline: none;          /*Remove o contorno ao focar no campo */
+    resize: none;          /*Desativa a redimensionamento */
+    background: none;      /* Remove o fundo padrão */
+    box-shadow: none;      /* Remove qualquer sombra */
+    font: inherit;         /* Herda a fonte do elemento pai */
+    color: inherit;        /* Herda a cor do texto do elemento pai */
+    line-height: normal;   /* Define a altura da linha como normal */
+    width: 70%;           /* Define a largura para ocupar 100% do elemento pai */
+    height: 100%;          /* Define a altura automática */
+    overflow: hidden;      /* Remove as barras de rolagem */
+    text-align: start;
+    font-size: 2em;
+    color: var(--color-third);
+    margin-bottom: 1em;
+}
+textarea::placeholder {
+    color: var(--color-third); /* Cor desejada */
+    opacity: 1;  /* Define a opacidade do placeholder */
+}
+.bi{
+    margin-right: .5em;
+}
+.action{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-btns{
+    display: flex;
+    gap: 1.5em;
+    justify-content: left;
+}
+#btn-cript{
+    width: 17em;
+    height: 3.5em;
+    border-radius: 1.5em;
+    background-color: var(--color-third);
+    border: 2px solid var(--color-third);
+    color: var(--color-second);
+}
+#btn-descript{
+    width: 17em;
+    height: 3.5em;
+    border-radius: 1.5em;
+    background-color: var(--color-fourth);
+    border: 2px solid var(--color-third);
+    color: var(--color-third);
+}
+/*! Formatação do container a direita*/
+.con_right{
+    width: 100%;
+}
+#con_right-img{
+    width: 100%;
+    margin-bottom: 2.5em;
+}
+.exibir{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+    background-color: var(--color-second);
+    border-radius: 2em ;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    max-width: 400px;
+}
+#copiar{
+    width: 17em;
+    height: 3.5em;
+    border: 2px solid var(--color-third);
+    color: var(--color-third);
+    border-radius: 1.5em;
+}
+.texto-codificado{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2em;
+    background-color: var(--color-second);
+    border-radius: 2em ;
+    height: 100%;
+    width: 100%;
+}
+
+/*! Ocultando elelmentos*/
+
+.ocultar{
+    display: none;
+}
