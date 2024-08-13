@@ -132,3 +132,8 @@ textarea::placeholder {
 .ocultar{
     display: none;
 }
+
+.alert{
+    font-size: 1.5em;
+    color: red;
+}
